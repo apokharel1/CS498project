@@ -1,4 +1,4 @@
 # CS498 Project
-This is our CS498 project
+This is Team-4 CS498 project
 <br>Learning Management System
 
