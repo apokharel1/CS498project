@@ -28,7 +28,7 @@
 
 			<article class="topcontent">
 		
-</br>
+			</br>
 				<header>
 					<h2><a href="#" title="first post">ABC High School</a></h2>
 				</header>
@@ -67,7 +67,7 @@
 						<li>Write objectives here</li>
 						
 					</ul>
-                    </p>
+                    			</p>
 
 				</content>
 			</article>	
@@ -78,7 +78,7 @@
 	
 	<aside class="top-sidebar">
 		<article>
-			<h2>Up Comming Events</h2>
+			<h2>Up Coming Events</h2>
 			<p><a href="#">Photo Expo</a> <br>
 				<a href="#">Code For Change </a><br>
 				<a href="#"> Relief</a><br>
@@ -94,8 +94,8 @@
 	
 	<aside class="middle-sidebar">
 		<article>
-			<h2>visit us</h2>
-			<p><a href="#" >ABC Official Website </a>
+			<h2>Visit Us</h2>
+			<p><a href="#" >ABC High School Official Website </a>
 			
 			</p>	
 		</article>
