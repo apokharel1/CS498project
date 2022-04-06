@@ -1,0 +1,11 @@
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `user_level` int(10) NOT NULL,
+  `fullname` varchar(30) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `secret_key` varchar(32) NOT NULL,
+  `type` text NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
