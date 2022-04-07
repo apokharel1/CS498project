@@ -12,7 +12,7 @@
 <body class="body">
 
 	<?php
-	include 'header1.php';
+	include 'header.php';
 	
 	?>
 	<br />
