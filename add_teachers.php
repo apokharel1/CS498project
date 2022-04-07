@@ -28,21 +28,6 @@ th, td {
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -50,7 +35,7 @@ th, td {
 
     <div id="wrapper">
 
-        <!-- Navigation -->
+      
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -61,7 +46,7 @@ th, td {
                 </button>
                 <a class="navbar-brand" href="profile.php">LMS</a>
             </div>
-            <!-- /.navbar-header -->
+            
 
            
 
@@ -70,9 +55,7 @@ th, td {
                 <div class="col-lg-12">
                     <h1 class="page-header">Teacher's Informations</h1>
                 </div>
-                <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
@@ -82,13 +65,12 @@ th, td {
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-								<?php
+		<?php
 
               include 'connect.php';
 
               include 'functions.php';
 
-               //isset($_GET['type']) && !empty($_GET['typ$e'])
 
               ?>
 
@@ -100,7 +82,6 @@ if ($user_level != 1 and $user_level != 2) {
 
                 
 								<?php
-// define variables and set to empty values
 $unameErr = $pwdErr = $ulevelErr = $actypeErr = $fullnameErr = $emailErr = $secretkeyErr = "";
 $uname = $pwd = $ulevel = $actype = $fullname = $email = $secretkey = "";
 
@@ -152,31 +133,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    } else {
      $secretkey = test_input($_POST["secretkey"]);
    }
-   /*if (empty($_POST["reg"])) {
-     $regErr = "Reg no  is required";
-   } else {
-     $reg = test_input($_POST["reg"]);
-   }
-   
-     $dep = test_input($_POST["dep"]);
-   
-   if (empty($_POST["sem"])) {
-     $semErr = "sem  is required";
-   } else {
-     $sem = test_input($_POST["sem"]);
-   }
-   $slc_school = test_input($_POST["slc_school"]);
-   $slc_board = test_input($_POST["slc_board"]);
-   $slc_percent = test_input($_POST["slc_percent"]);
-   */
+
 
    include 'connect.php';
 
 	$sql="INSERT INTO `users`(`username`, `password`, `user_level`, `type`, `fullname`,`email`,`secret_key`) VALUES ('$uname','$pwd','$ulevel','$actype','$fullname','$email','$secretkey')";
 
-   //$sql="INSERT INTO `student`(`fname`,`mname`,`lname`,`crn`,`reg`,`dep`,`sem`,`slc_school`,`slc_board`,`slc_percent`) 
-   //VALUES ('$fname','$mname','$lname','$crn','$reg','$dep','$sem','$slc_school','$slc_board','$slc_percent')";
-   if(mysqli_query($mysqli,$sql)){
+    if(mysqli_query($mysqli,$sql)){
    echo "Data inserted successfully.";
    
    exit;
@@ -280,25 +243,7 @@ function test_input($data) {
 
 
 								
-								
-
-
-                                    
-                                <!-- /.col-lg-6 (nested) -->
-                                
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+	
 
 </body>
 
