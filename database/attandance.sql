@@ -1,4 +1,4 @@
-CREATE TABLE `attendance`(
+CREATE TABLE `attendance` (
   `id` int(6) NOT NULL,
   `crn` int(6) NOT NULL,
   `dept_id` int(1) NOT NULL,
