@@ -53,7 +53,7 @@ th, td {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="profile.php">SIS</a>
+                <a class="navbar-brand" href="profile.php">LMS</a>
             </div>
 
            
