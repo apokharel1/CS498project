@@ -79,7 +79,13 @@ if ($user_level != 1 and $user_level != 2) {
                         <li>
                             <a href="add_student.php"><i class="fa fa-dashboard fa-fw"></i> ADD STUDENT</a>
                         </li>
-                       
+			    <li>
+                                    <a href="post_assignment.php"><i class="fa fa-dashboard fa-fw"></i>ASSIGNMENT</a>
+                        </li>
+                        <li>
+                                    <a href="Assign_Grades.php"><i class="fa fa-dashboard fa-fw"></i>ASSIGN GRADE</a>
+                        </li>
+                       <?php if($user_level==1){?>
 							<li>
 
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Admin Panel<span class="fa arrow"></span></a>
