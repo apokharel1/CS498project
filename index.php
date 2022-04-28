@@ -12,6 +12,7 @@
 </head>
 
 <body class="body">
+<?php include 'connect.php'; ?>
 
 <?php include 'functions.php'; ?>
 
