@@ -179,7 +179,7 @@ function test_input($data) {
     						<tr>	
        
     	
-    								<td align="right">College Roll No : </td>
+    								<td align="right">Student's Id No : </td>
     								<td><input type='number' name='crn' />
     								<span class="error"> <?php echo $crnErr;?></span>
     								</td>
