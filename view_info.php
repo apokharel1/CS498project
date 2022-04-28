@@ -24,7 +24,9 @@
     <br />
     
     <div class="mainform">
-  
+    
+    
+    
     <form align="center" method='post'>
 <?php
 if(isset($_POST['submit'])){
@@ -35,9 +37,9 @@ if(isset($_POST['submit'])){
         echo "<p>Fields empty!!!</p>";
     } else {
             
-            $check_login = mysql_query("SELECT id,status FROM student WHERE fname='$fname' AND lname='$lname' AND crn='$crn'");
-            if(mysql_num_rows($check_login) == 1){
-                $run = mysql_fetch_array($check_login);
+            $check_login = mysqli_query($mysqli,"SELECT id,status FROM student WHERE fname='$fname' AND lname='$lname' AND crn='$crn'");
+            if(mysqli_num_rows($check_login) == 1){
+                $run = mysqli_fetch_array($check_login);
                 $user_id = $run['id'];
                 $status = $run['status'];
                 if($status == '0'){
@@ -52,7 +54,7 @@ if(isset($_POST['submit'])){
                 
             }
             else {
-            echo "<p><h3>Sorry!! Please Enter Correct Name and Student id No.</h3></p>";
+            echo "<p><h3>Sorry!! Please Enter Correct Name and Student id.</h3></p>";
             }
     
     }
@@ -74,13 +76,13 @@ Student's Id No. : <br/>
 
 
 </form>
-
+    
+    
+    
+    
+    
+    
     </div>
     
-    
-    <?php
-    //include 'footer.php';
-    
-    ?>  
-    
+
     </body>
