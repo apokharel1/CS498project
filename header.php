@@ -11,9 +11,7 @@
 
 <body class="body">
 
-
 <div>
-
 <?php 
 
 $username = $_SESSION['username'];
@@ -38,21 +36,19 @@ if(loggedin()){
  ?>
 
 <header class="mainheader">
-		<img src="img/logo.gif">
+		<img src="img/abclogo.png">
 	
-		<nav><center><ul >
+		<nav><center><ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="login.php">Log in</a></li>
+			
 			<li><a href="view_info.php">View Information</a></li>
-			<li><a href="signup.php">Sign Up</a></li>
+			
 		</ul></center></nav>
 	</header>
-
 <?php
 }
 
 ?>
-
 
 </div>
 		
